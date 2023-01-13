@@ -11,7 +11,7 @@ class Spindler(Battery):
 
     def __init__(self, last_service_date: int) -> None:
         self.last_service_date = last_service_date
-        self.check_time = 2 # years
+        self.check_time = 3 # years
         self.current_date = datetime.today().date()
 
 
