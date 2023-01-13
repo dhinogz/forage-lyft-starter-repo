@@ -8,7 +8,7 @@ class TestSpindler(unittest.TestCase):
 
     def test_does_not_need_service(self):
         today = datetime.today().date()
-        last_service_date = today.replace(year=today.year - 1)
+        last_service_date = today.replace(year=today.year - 2)
         battery = Spindler(last_service_date=last_service_date)
 
         self.assertFalse(battery.needs_service())
